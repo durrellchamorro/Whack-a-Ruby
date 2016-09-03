@@ -97,7 +97,7 @@ class WhackARuby < Gosu::Window
   end
 
   def time_up?
-    @game_stats.time_remaining < 0
+    @game_stats.time_remaining <= 0
   end
 
   def button_down(id)
